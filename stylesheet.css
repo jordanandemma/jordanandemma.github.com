@@ -47,11 +47,11 @@ html, body {
 #when_and_where {
 }
 
-#services {
+#accomodation {
   background-color: #306d9f;
   color: #ffffff;
 }
-#services .glyphicon {
+#accomodation .glyphicon {
   border: 2px solid #FFFFFF;
   border-radius: 50%;
   display: inline-block;
@@ -62,9 +62,36 @@ html, body {
   vertical-align: middle;
   width: 140px;
 }
+#accomodation .glyphicon.glamping {
+	background: url(../images/posh_tent.jpg) 48% 15%;
+}
 
-#information {
-  background: url(../images/estate.jpg) no-repeat center center fixed; 
+#accomodation .glyphicon.camping {
+	background: url(../images/field.jpg) 48% 15%;
+}
+
+#accomodation .glyphicon.cottage {
+	background: url(../images/cottage.jpg) 48% 15%;
+}
+
+#accomodation .glyphicon.duke {
+	background: url(../images/duke.jpg) 48% 15%;
+}
+
+#accomodation .row p {
+	margin: 0px;
+}
+
+#accomodation .row > div {
+	margin: 0px 0px 10px 0px;
+}
+
+#accomodation .row > div a {
+	color: white;
+}
+
+#rsvp {
+  background: url(../images/incredibles.jpg) no-repeat center center fixed; 
   display: table;
   height: 800px;
   position: relative;
@@ -74,7 +101,7 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-#information .panel {
+#rsvp .panel {
   opacity: 0.85;
 }
 
