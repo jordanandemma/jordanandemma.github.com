@@ -44,7 +44,21 @@ html, body {
 	margin: 20px;
 }
 
+
+
 #when_and_where {
+}
+
+#wedding_party {
+  background: url(../images/beach.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 800px;
+  position: relative;
+  width: 100%;
+
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #accomodation {
@@ -78,6 +92,18 @@ html, body {
 	background: url(../images/duke.jpg) 48% 15%;
 }
 
+#accomodation .glyphicon.fox {
+	background: url(../images/fandh.jpg) 48% 15%;
+}
+
+#accomodation .glyphicon.rowantree {
+	background: url(../images/rowantreefarm.jpg) 48% 15%;
+}
+
+#accomodation .glyphicon.crossley {
+	background: url(../images/crossley.jpg) 48% 15%;
+}
+
 #accomodation .row p {
 	margin: 0px;
 }
@@ -90,16 +116,25 @@ html, body {
 	color: white;
 }
 
+#make_a_weekend_of_it {
+    background: url(../images/beach.jpg) no-repeat center center fixed; 
+    display: table;
+    height: 800px;
+    position: relative;
+    width: 100%;
+
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #rsvp {
-  background: url(../images/incredibles.jpg) no-repeat center center fixed; 
+  background-color: #306d9f;
+  color: #ffffff;
   display: table;
-  height: 800px;
+  height: 400px;
   position: relative;
   width: 100%;
-
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 #rsvp .panel {
   opacity: 0.85;
