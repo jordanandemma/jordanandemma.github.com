@@ -61,6 +61,19 @@ html, body {
   background-size: cover;
 }
 
+#wedding_party  .glyphicon {
+  background: url(../images/posh_tent.jpg) 48% 15%;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+} 
+
 #accomodation {
   background-color: #306d9f;
   color: #ffffff;
@@ -127,6 +140,25 @@ html, body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#make_a_weekend_of_it .glyphicon {
+  background: url(../images/crossley.jpg) 48% 15%;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#make_a_weekend_of_it {
+	
+}
+
+
 
 #rsvp {
   background-color: #306d9f;
