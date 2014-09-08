@@ -138,34 +138,34 @@
                <h2 class="panel-title">Brides Party</h2>
              </div>
              <div class="panel-body lead">
-			    <div class="row text-center">
-			      <div class="col-sm-12 ">
-					<i class="glyphicon emma-wood"> </i>
-			 		<h4>Bride</h4>
-					<p>Emma Wood</p>
+			         <div class="row text-center">
+			           <div class="col-sm-12 ">
+			             <i class="glyphicon emma-wood"> </i>
+			             <h4>Bride</h4>
+				           <p>Emma Wood</p>
+			           </div>
+			         </div>
+			         <div class="row text-center">
+			           <div class="col-sm-4">
+                   <i class="glyphicon cat-hall"> </i>
+                   <h4>Bridesmaid</h4>
+                   <p>Cat Hall</p>
+			           </div>
+			           <div class="col-sm-4">
+					         <i class="glyphicon kayleigh-barker"> </i>
+			 		         <h4>Maid of Honour</h4>
+					         <p>Kayleigh Barker</p>
+                 </div>            
+			           <div class="col-sm-4">
+                   <i class="glyphicon charlotte-hall"> </i>
+                   <h4>Bridesmaid</h4>
+                   <p>Charlotte Hall</p>
+			           </div>
 			      </div>
-			  	</div>
-			    <div class="row text-center">
-			      <div class="col-sm-4">
-					<i class="glyphicon kayliehg-barker"> </i>
-			 		<h4>Made of Honour</h4>
-					<p>Kayleigh Barker</p>
-			      </div>
-			      <div class="col-sm-4">
-					<i class="glyphicon cat-hall"> </i>
-			 		<h4>Bridesmaid</h4>
-					<p>Cat Hall</p>
-			      </div>
-			      <div class="col-sm-4">
-					<i class="glyphicon charlotte-hall"> </i>
-			 		<h4>Bridesmaid</h4>
-					<p>Charlotte Hall</p>
-			      </div>
-			  	</div>
-             </div>
-           </div>
-         </div>
-	</div>	
+          </div>
+        </div>
+      </div>
+    </div>	
   </div>
 </div>
 <!-- /fourth section --><!-- third section - Services -->
@@ -272,14 +272,48 @@
             <h2 class="panel-title">RSVP</h2>
           </div>
           <div class="panel-body lead">
-            Details are on your invitation but if you have not recieved your invitation yet please let us know if you are able to make it and have an specific dietary requirements by sending us an email below.
+            <div id='already_rsvp'>
+              <h2>Thankyou</h2>
+              <p>It would seem you have already RSVP'd. However if something went wrong or you need to RSVP again <a href='#' id='show_rsvp'>click here</a></p>
+            </div>
+            <div id='need_to_rsvp'>
+            <p>Please RSVP below to let us know if you are able to attend and also if you have an specific dietry requirements.</p>
             
-            <form method="POST" action="//forms.brace.io/emmaandjordangethitched@gmail.com">
-                <input type="text" name="name">
-                <input type="text" name="from">
+            <form method="POST" action="/">
+                <p>
+                  <label for='form_name'>Guest(s): 
+                    <input id='form_name' type="text" name="name" placeholder='Jordan & Emma' required>
+                  </label>
+                </p>
+                <p>Are you able to attend: 
+                  <div class='form_radio'>
+                    <label for='form_yes'>Yes
+                      <input id='form_yes' type='radio' value='yes' name='coming' checked>
+                    </label>
+                    <label form='form_no'>No
+                      <input id='form_no' type='radio' value='no' name='coming'>
+                    </label>
+                  </div>
+                </p>
+                <p>
+                  <label for='form_email'>Email: 
+                    <input id='form_email' type="text" name="email" placeholder='blaa@123.com' required>
+                  </label>
+                </p>
+                <p>
+                  <label for='form_comments'>Additional Comments/Dietry Requirements etc: <br/>
+                    <textarea id='form_comments' type="textarea" name="comments" ></textarea>
+                  </label>                  
+                </p>
+                <p>
+                  <label for='form_math'>
+                    Spam check: 9 + 8 =&nbsp;  <input id='form_math' type="text" name="math" required>
+                  </label>
+                </p>
                 <input type="hidden" name="_subject" value="RVSP" />
                 <input type="submit" value="Send">
             </form>
+          </div>
           </div>
         </div>
       </div>

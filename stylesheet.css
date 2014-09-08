@@ -74,6 +74,38 @@ html, body {
   width: 140px;
 } 
 
+#wedding_party  .glyphicon.jordan{
+  background: url(../images/jordan.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.michael-robson{
+  background: url(../images/robbo.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.lee-raisbeck{
+  background: url(../images/lee.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.ric-mcmahon{
+  background: url(../images/ric.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.emma-wood{
+  background: url(../images/emma.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.cat-hall{
+  background: url(../images/cat.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.charlotte-hall{
+  background: url(../images/charlie.jpg) 48% 15%;
+}
+
+#wedding_party  .glyphicon.kayleigh-barker{
+  background: url(../images/kayleigh.jpg) 48% 15%;
+}
+
 #accomodation {
   background-color: #306d9f;
   color: #ffffff;
@@ -171,6 +203,15 @@ html, body {
 #rsvp .panel {
   opacity: 0.85;
   color: black;
+  text-align: center;
+}
+
+#rsvp form input {
+  display:block;
+}
+
+#rsvp form .form_radio input, #rsvp form input[type='submit'] {
+  display: inline-block;
 }
 
 #google_map {
