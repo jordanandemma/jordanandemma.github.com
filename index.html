@@ -243,21 +243,81 @@
           </div>
         </div>
 		
-	    <div class="row text-center">
-	      <div class="col-sm-4">
-			<i class="glyphicon lee-raisbeck"> </i>
-	      </div>
-	      <div class="col-sm-8">
-	         <div class="panel panel-default">
-			 				<div class="panel-heading">
-			 	 		<h4>The Moors Centre in Danby</h4>
-			 		</div>
-				 <div class="panel-body lead">
-					 The Moors Centre in Danby is a great attraction for both adults and kids, where you can get lost in the salmon labyrinth, try your hand at quoits and brush up your navigational skills.
-				 </div>			   
-	         </div>
-	      </div>
-	  	</div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <i class="glyphicon moors-centre"> </i>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>The Moors Centre in Danby</h4>
+              </div>
+              <div class="panel-body lead">
+                The Moors Centre in Danby is a great attraction for both adults and kids, where you can get lost in the salmon labyrinth, try your hand at quoits and brush up your navigational skills.
+              </div>			   
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <i class="glyphicon whitby"> </i>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Whitby</h4>
+              </div>
+              <div class="panel-body lead">
+                Visit Whitbt text
+              </div>			   
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <i class="glyphicon skelton"> </i>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Skelton Tower</h4>
+              </div>
+              <div class="panel-body lead">
+                The romantic ruins of Skelton Tower are perched on the edge of Newtondale and command amazing views towards Goathland Moor to the north, Pickering to the south, and down Newtondale itself and over the track of the North Yorkshire Moors Railway.
+              </div>			   
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <i class="glyphicon goathland"> </i>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Goathland</h4>
+              </div>
+              <div class="panel-body lead">
+
+              </div>			   
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <i class="glyphicon rosedale"> </i>
+          </div>
+          <div class="col-sm-8">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4>Rosedale</h4>
+              </div>
+              <div class="panel-body lead">
+                Rosedale
+              </div>			   
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -279,7 +339,7 @@
             <div id='need_to_rsvp'>
             <p>Please RSVP below to let us know if you are able to attend and also if you have an specific dietry requirements.</p>
             
-            <form method="POST" action="/">
+            <form method="POST" action="/" data-parsley-validate>
                 <p>
                   <label for='form_name'>Guest(s): 
                     <input id='form_name' type="text" name="name" placeholder='Jordan & Emma' required>
@@ -297,7 +357,7 @@
                 </p>
                 <p>
                   <label for='form_email'>Email: 
-                    <input id='form_email' type="text" name="email" placeholder='blaa@123.com' required>
+                    <input id='form_email' type="email" name="email" placeholder='blaa@123.com' required>
                   </label>
                 </p>
                 <p>
@@ -307,8 +367,8 @@
                 </p>
                 <p>
                   <label for='form_math'>
-                    Spam check: 9 + 8 =&nbsp;  <input id='form_math' type="text" name="math" required>
-                  </label>
+                    Spam check: 9 + 8 =&nbsp;  <input data-parsley-type="number" min="17" max="17" id='form_math' type="text" name="math" required>
+                   </label>
                 </p>
                 <input type="hidden" name="_subject" value="RVSP" />
                 <input type="submit" value="Send">
@@ -325,6 +385,7 @@
     <script src="/jquery.js"></script>
     <script src="/bootstrap-js.js "></script>
     <script src="/main.js"></script>
+    <script src="/parsley.js"></script>
   </body>
 </html>
 
