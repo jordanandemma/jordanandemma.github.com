@@ -193,6 +193,10 @@ html, body {
   width: 210px;
 }
 
+#make_a_weekend_of_it .glyphicon.moors-centre {
+	background: url(../images/moors-centre.jpg) 28% 15%;
+}
+
 #make_a_weekend_of_it .glyphicon.whitby {
 	background: url(../images/whitby.jpg) 28% 15%;
 }
@@ -202,11 +206,11 @@ html, body {
 }
 
 #make_a_weekend_of_it .glyphicon.goathland {
-	background: url(../images/whitby.jpg) 28% 15%;
+	background: url(../images/goathland.jpg) 28% 15%;
 }
 
 #make_a_weekend_of_it .glyphicon.rosedale {
-	background: url(../images/skelton.jpg) 30% 15%;
+	background: url(../images/rosedale.jpg) 30% 15%;
 }
 
 #rsvp {

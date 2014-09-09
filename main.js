@@ -76,12 +76,18 @@ $(document).ready(function(){
               comments: $(this).find('#form_comments').val()
             },
             dataType: "json",
-            success: function(){
-                hideRsvp;
-                document.setCookie('rsvpd', 1);
-              }.bind(this)
-            });
-          }
+          })
+          .done(
+            function(){
+              hideRsvp();
+              document.setCookie('rsvpd', 1);
+            }.bind(this)
+          )
+          .fail(function() {
+            alert( "There was a problem submitting this try again" );
+          })
+
+        }
       });
     
     $('#show_rsvp').click(function(e){
