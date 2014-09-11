@@ -227,6 +227,11 @@ html, body {
   text-align: center;
 }
 
+/*HACK*/
+#rsvp .form_radio .parsley-errors-list{
+  display:inline;
+}
+
 #rsvp form input {
   display:block;
   margin: 0 auto;
@@ -277,8 +282,16 @@ textarea.parsley-error {
   display: inline-block;
 }
 
+#rsvp form .form_radio label{
+  font-weight: normal;
+}
+
 #rsvp #already_rsvp{
   display: none;
+}
+
+#rsvp [for="form_evening_plus_one_name"]{
+  display:none;
 }
 
 #google_map {

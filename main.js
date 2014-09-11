@@ -73,7 +73,9 @@ $(document).ready(function(){
               coming: $(this).find('[name="coming"]:checked').val(),
               guests: $(this).find('#form_name').val(), 
               email: $(this).find('#form_email').val(), 
-              comments: $(this).find('#form_comments').val()
+              comments: $(this).find('#form_comments').val(),
+              evening_guest: $(this).find('#form_comments').val(),
+              evening_guest_name: $(this).find('#form_evening_plus_one_name').val()
             },
             dataType: "json",
           })
@@ -95,5 +97,12 @@ $(document).ready(function(){
       showRsvp();  
     })
     
+    $('[for="form_evening_plus_one_no"], #form_evening_plus_one_no').click(function(){
+      $('[for="form_evening_plus_one_name"]').fadeOut(500);
+      $('#form_evening_plus_one_name').val('');
+    });
     
+    $('[for="form_evening_plus_one_yes"], #form_evening_plus_one_yes').click(function(){
+      $('[for="form_evening_plus_one_name"]').fadeIn(500);
+    });
 })
