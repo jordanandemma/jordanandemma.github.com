@@ -227,11 +227,6 @@ html, body {
   text-align: center;
 }
 
-/*HACK*/
-#rsvp .form_radio .parsley-errors-list{
-  display:inline;
-}
-
 #rsvp form input {
   display:block;
   margin: 0 auto;
@@ -276,6 +271,11 @@ textarea.parsley-error {
 
 .parsley-errors-list.filled {
   opacity: 1;
+}
+
+/*HACK*/
+#rsvp .form_radio .parsley-errors-list{
+  display:inline;
 }
 
 #rsvp form .form_radio input, #rsvp form input[type='submit'] {

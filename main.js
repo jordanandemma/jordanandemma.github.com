@@ -74,7 +74,7 @@ $(document).ready(function(){
               guests: $(this).find('#form_name').val(), 
               email: $(this).find('#form_email').val(), 
               comments: $(this).find('#form_comments').val(),
-              evening_guest: $(this).find('#form_comments').val(),
+              evening_guest: $(this).find('[name="evening_plus_one"]:checked').val(),
               evening_guest_name: $(this).find('#form_evening_plus_one_name').val()
             },
             dataType: "json",
