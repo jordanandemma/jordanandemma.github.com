@@ -67,7 +67,7 @@ $(document).ready(function(){
       
       if ($(this).parsley().isValid()) {
         $.ajax({
-            url: "https://formspree.io/" + to + "@gmail.com", 
+            url: "//formspree.io/" + to + "@gmail.com", 
             method: "POST",
             data: {
               coming: $(this).find('[name="coming"]:checked').val(),
